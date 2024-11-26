@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h1>History Quiz App</h1>
+            <p>Created by Yash Mishra</p>
+        </div>
+
+        <!-- Quiz Section -->
+        <div id="quiz">
+            <div class="level">
+                <span>Level: <span id="level">1</span></span> | 
+                <span>Question: <span id="question-number">1</span></span>
+            </div>
+            <div class="question"></div>
+
+            <div class="options">
+                <button class="option" onclick="selectOption(0)"></button>
+                <button class="option" onclick="selectOption(1)"></button>
+                <button class="option" onclick="selectOption(2)"></button>
+                <button class="option" onclick="selectOption(3)"></button>
+            </div>
+
+            <button id="next" onclick="nextQuestion()">Next Question</button>
+        </div>
+
+        <!-- Facebook Button -->
+        <div class="facebook-btn">
+            <a href="https://www.facebook.com/YourPageName" target="_blank">
+                <button>Visit Our Facebook Page</button>
+            </a>
+        </div>
+
+        <!-- Result Section -->
+        <div id="result">
+            <h2>Quiz Completed!</h2>
+            <p id="summary"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
