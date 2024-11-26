@@ -1,0 +1,134 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* Black background */
+    color: #fff; /* White text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for centering content */
+.container {
+    background-color: #333333; /* Dark gray container */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Header Styling */
+.header h1 {
+    font-size: 36px;
+    color: #4CAF50; /* Green color for header */
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 18px;
+    color: #bbb; /* Light gray text for subheading */
+}
+
+/* Quiz Section */
+.level {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #bbb; /* Light gray for level text */
+}
+
+.question {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff; /* White text for question */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.option {
+    padding: 15px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Next Question Button */
+#next {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #008C00; /* Green */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#next:hover {
+    background-color: #006400; /* Darker green */
+}
+
+/* Facebook Button */
+.facebook-btn {
+    margin-top: 20px;
+}
+
+.facebook-btn button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4267B2; /* Facebook blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.facebook-btn button:hover {
+    background-color: #365899; /* Darker blue on hover */
+}
+
+/* Result Section */
+#result {
+    display: none;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+#result h2 {
+    color: #4CAF50; /* Green color for result header */
+}
+
+#result button {
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#result button:hover {
+    background-color: #45a049;
+}
